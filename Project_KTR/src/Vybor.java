@@ -35,6 +35,7 @@ public class Vybor extends JFrame {
 					new PryamougKv();
 					dispose();
 				} else if (treyg.isSelected()) {
+					new NestandartKv();
 					dispose();
 				}
 			}
