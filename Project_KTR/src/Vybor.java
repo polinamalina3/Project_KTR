@@ -3,7 +3,6 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
 
-
 public class Vybor extends JFrame {
 	/**
 	 * 
@@ -32,7 +31,12 @@ public class Vybor extends JFrame {
 		zapusk.setBounds(100, 120, 100, 30);
 		zapusk.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				if (pryam.isSelected()) {
+					new PryamougKv();
+					dispose();
+				} else if (treyg.isSelected()) {
+					dispose();
+				}
 			}
 		});
 		
